@@ -1,0 +1,46 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background: transparent url(../images/bg-chalk.jpg) center top no-repeat;
+}
+.container {
+  padding: 2em;
+  margin: 0 auto;
+}
+header {
+  text-align: center;
+  z-index: 1;
+}
+.main {
+  position: relative;
+  overflow: hidden;
+  margin-top: 6em;
+  min-height: 35.5em;
+}
+.main .item-wrapper {
+  margin: 0 auto;
+  max-width: 22.500em;
+}
+.main .item-wrapper p {
+  color: #ffffff;
+  margin: 2em;
+}
+.main .item-wrapper ul {
+  color: #ffffff;
+  margin: 2em;
+  padding: 0;
+}
+.main .item-wrapper ul li {
+  list-style-type: none;
+}
+footer {
+  background-color: #000000;
+  color: #ffffff;
+}
