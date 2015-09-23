@@ -9,6 +9,7 @@ html {
 }
 body {
   background: transparent url(../images/bg-chalk.jpg) center top no-repeat;
+  background-size: cover;
 }
 .container {
   padding: 2em;
@@ -39,6 +40,12 @@ header {
 }
 .main .item-wrapper ul li {
   list-style-type: none;
+  font-family: 'EraserRegular', sans-serif;
+  font-size: 1.2em;
+  margin: .6em 0;
+}
+.main .item-wrapper del {
+  color: #b3b3b3;
 }
 footer {
   background-color: #000000;
