@@ -19,6 +19,10 @@ header {
   text-align: center;
   z-index: 1;
 }
+header h1,
+header h2 {
+  font-family: 'PTSansNarrow', Helvetica, sans-serif;
+}
 .main {
   position: relative;
   overflow: hidden;
