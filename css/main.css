@@ -23,6 +23,12 @@ header h1,
 header h2 {
   font-family: 'PTSansNarrow', Helvetica, sans-serif;
 }
+header h1 {
+  margin: .2em 0;
+}
+header h2 {
+  font-size: 1em;
+}
 .main {
   position: relative;
   overflow: hidden;
