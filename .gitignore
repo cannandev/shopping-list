@@ -1,4 +1,5 @@
 .sass-cache
 *.css.map
 less/*
+js/min/main-min.js
 
