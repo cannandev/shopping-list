@@ -65,9 +65,9 @@ button {
 .main {
   position: relative;
   overflow: hidden;
+  max-height: 698px;
 }
 .main p.count {
-  color: #ffffff;
   text-align: center;
 }
 .item-wrapper {
@@ -125,6 +125,6 @@ button {
 }
 @media all and (min-width: 750px) {
   .header-form {
-    background-color: rgba(255, 0, 0, 0.5);
+    /* background-color: fade(red, 50%);*/
   }
 }
