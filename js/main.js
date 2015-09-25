@@ -18,7 +18,12 @@ $(document).ready(function(){
 
 	$('.items').on('click', 'li', function(event) {
 		event.preventDefault();
-		$(this).addClass('checked');
+		if($(this).hasClass('checked')){
+			$(this).removeClass('checked');
+		}
+		else {
+			$(this).addClass('checked');
+		}
 	});
 
 
