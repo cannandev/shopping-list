@@ -7,6 +7,10 @@ function addItem() {
 	}
 }
 
+function removeItem() {
+	console.log('removed');
+}
+
 $(document).ready(function(){
 	$('.form-submit').on('click', addItem);
 
