@@ -104,6 +104,24 @@ button {
   position: fixed;
   width: 100%;
   bottom: 0;
+  padding-left: 1em;
+}
+.footer-instructions h1 {
+  margin: .5em 0 .2em 0;
+  font-size: 1em;
+}
+.footer-instructions .angle {
+  position: absolute;
+  right: 0;
+  top: -4px;
+  font-size: 2em;
+  padding-right: .5em;
+}
+.footer-instructions .angle i:first-child {
+  display: none;
+}
+.footer-instructions p {
+  display: none;
 }
 @media all and (min-width: 750px) {
   .header-form {
