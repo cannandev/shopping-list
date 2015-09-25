@@ -1,6 +1,15 @@
 /* fonts */
-@import '../css/fonts.css';
-/*  colors */
+@font-face {
+  font-family: 'EraserRegular';
+  src: url('../fonts/EraserRegular-webfont.eot');
+  src: url('../fonts/EraserRegular-webfont.eot?iefix') format('eot'), url('../fonts/EraserRegular-webfont.woff') format('woff'), url('../fonts/EraserRegular-webfont.ttf') format('truetype'), url('../fonts/EraserRegular-webfont.svg#webfont') format('svg');
+}
+@font-face {
+  font-family: 'PTSansNarrow';
+  src: url('../fonts/PTN57F-webfont.eot');
+  src: url('../fonts/PTN57F-webfont.eot?iefix') format('eot'), url('../fonts/PTN57F-webfont.woff') format('woff'), url('../fonts/PTN57F-webfont.ttf') format('truetype'), url('../fonts/PTN57F-webfont.svg#webfont') format('svg');
+}
+/* basic overrides */
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -14,9 +23,26 @@ body {
   background: transparent url(../images/bg-chalk.jpg) center top no-repeat;
   background-size: cover;
 }
+input {
+  font-family: inherit;
+  font-size: .8em;
+  width: 200px;
+  padding: 4px .5em;
+  border: 1px solid #000000;
+  outline: 0;
+}
+button {
+  font-size: .8em;
+  border: 0;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 6px;
+  vertical-align: middle;
+}
 .container {
   margin: 0 auto;
 }
+/* header content */
 .header-form {
   background-color: transparent;
   background-color: rgba(0, 0, 0, 0.2);
@@ -36,45 +62,43 @@ body {
 .header-form .form-group {
   margin: .5em 0;
 }
-.header-form input {
-  font-size: .8em;
-  width: 200px;
-  padding: 4px .5em;
-  border: 1px solid #000000;
-  outline: 0;
-}
-.header-form button {
-  font-size: .8em;
-  border: 0;
-  background-color: #000000;
-  color: #ffffff;
-  padding: 5px 6px;
-  vertical-align: middle;
-}
+/* main content */
 .main {
   position: relative;
   overflow: hidden;
 }
+.main p.count {
+  color: #ffffff;
+  text-align: center;
+}
 .item-wrapper {
   margin: 0 auto;
-  min-width: 300px;
-}
-.item-wrapper p {
-  color: #ffffff;
+  width: 16.875em;
+  padding: 1em 0;
 }
 .item-wrapper ul {
   color: #ffffff;
   padding: 0;
 }
 .item-wrapper ul li {
+  position: relative;
   list-style-type: none;
   font-family: 'EraserRegular', sans-serif;
-  font-size: 1.2em;
-  line-height: 1.6;
+  line-height: 1.8;
+}
+.item-wrapper ul li button {
+  position: absolute;
+  right: 0;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+.item-wrapper ul li.selected {
+  background: rgba(255, 255, 255, 0.3);
 }
 .item-wrapper del {
   color: #b3b3b3;
 }
+/* footer content */
 .footer-instructions {
   background-color: #000000;
   color: #ffffff;
