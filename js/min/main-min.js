@@ -1,1 +1,1 @@
-$(document).ready(function(){console.log("ready")});
+function addItem(){var d=$(".add-item").val(),t=$(".items");d&&($(t).append("<li>"+d+"</li>"),$(".add-item").val(""))}$(document).ready(function(){$(".form-submit").on("click",addItem),$(document).keydown(function(d){13===d.which&&addItem()})});
