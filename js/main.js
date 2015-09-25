@@ -17,7 +17,7 @@ $(document).ready(function(){
 	});
 
 	$('.items').on('click', 'li', function(event) {
-		event.preventDefault();
+		event.preventDefault(); //do I need this?
 		if($(this).hasClass('checked')){
 			$(this).removeClass('checked');
 		}
@@ -26,5 +26,13 @@ $(document).ready(function(){
 		}
 	});
 
+	$('.items').on('mouseenter', 'li', function(event) {
+		event.preventDefault();
+		$(this).addClass('selected').append('<button>Remove</button');
+	}).on('mouseleave', 'li', function(event) {
+		event.preventDefault();
+		$(this).removeClass('selected');
+		$(this).find('button').remove();
+	});
 
 });
