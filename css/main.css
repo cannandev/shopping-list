@@ -94,8 +94,9 @@ button {
 .item-wrapper ul li.selected {
   background: rgba(255, 255, 255, 0.3);
 }
-.item-wrapper del {
+.item-wrapper ul li.checked {
   color: #b3b3b3;
+  text-decoration: line-through;
 }
 /* footer content */
 .footer-instructions {
