@@ -1,1 +1,1 @@
-function addItem(){var d=$(".add-item").val(),t=$(".items");d&&($(t).append("<li>"+d+"</li>"),$(".add-item").val(""))}$(document).ready(function(){$(".form-submit").on("click",addItem),$(document).keydown(function(d){13===d.which&&addItem()})});
+function addItem(){var d=$(".add-item").val(),e=$(".items");d&&($(e).append("<li>"+d+"</li>"),$(".add-item").val(""))}$(document).ready(function(){$(".form-submit").on("click",addItem),$(document).keydown(function(d){13===d.which&&addItem()}),$(".items").on("click","li",function(d){d.preventDefault(),$(this).addClass("checked")})});
