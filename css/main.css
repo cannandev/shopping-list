@@ -1,4 +1,6 @@
+/* fonts */
 @import '../css/fonts.css';
+/*  colors */
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -15,33 +17,33 @@ body {
 .container {
   margin: 0 auto;
 }
-header {
+.header-form {
+  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 2.6em 0;
   text-align: center;
   z-index: 1;
-  background-color: transparent;
-  background-color: rgba(0, 0, 0, 0.1);
 }
-header h1 {
+.header-form h1 {
   margin: .5em 0 .2em 0;
   font-size: 1.4em;
   text-transform: uppercase;
 }
-header h2 {
+.header-form h2 {
   font-size: 1em;
   margin: 0;
 }
-header .form-group {
+.header-form .form-group {
   margin: .5em 0;
 }
-header input {
+.header-form input {
   font-size: .8em;
   width: 200px;
   padding: 4px .5em;
   border: 1px solid #000000;
   outline: 0;
 }
-header button {
+.header-form button {
   font-size: .8em;
   border: 0;
   background-color: #000000;
@@ -73,7 +75,7 @@ header button {
 .item-wrapper del {
   color: #b3b3b3;
 }
-footer {
+.footer-instructions {
   background-color: #000000;
   color: #ffffff;
 }
