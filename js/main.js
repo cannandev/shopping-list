@@ -1,6 +1,6 @@
 function updateCount() {
 	var count = $('.count').find('span');
-	var listLength = $('.items li').size();
+	var listLength = $('.items li').not('.checked').size();
 	count.text(listLength);
 }
 
@@ -8,7 +8,7 @@ function addItem() {
 	var newItem = $('.add-item').val();
 	var list = $('.items');
 	if(newItem) { // make sure the value is not empty
-		$(list).append('<li>'+newItem+'</li>');
+		$(list).append('<li>' + newItem + '</li>');
 		$('.add-item').val(''); //clears input 
 	}
 	updateCount();
@@ -31,6 +31,7 @@ $(document).ready(function(){
 		else {
 			$(this).addClass('checked');
 		}
+		updateCount();		
 	}).on('mouseenter', 'li', function(event) {
 		event.preventDefault();
 		$(this).addClass('selected').append('<button>Remove</button');
