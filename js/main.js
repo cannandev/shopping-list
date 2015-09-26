@@ -7,10 +7,6 @@ function addItem() {
 	}
 }
 
-function removeItem() {
-	console.log('removed');
-}
-
 $(document).ready(function(){
 	$('.form-submit').on('click', addItem);
 
@@ -35,7 +31,9 @@ $(document).ready(function(){
 		event.preventDefault();
 		$(this).removeClass('selected');
 		$(this).find('button').remove();
+	}).on('click', 'button', function(event) {
+		event.preventDefault();
+		$(this).parent().remove();
 	});
-
 
 });
