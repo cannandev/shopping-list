@@ -1,3 +1,9 @@
+function updateCount() {
+	var count = $('.count').find('span');
+	var listLength = $('.items li').size();
+	count.text(listLength);
+}
+
 function addItem() {
 	var newItem = $('.add-item').val();
 	var list = $('.items');
@@ -5,6 +11,7 @@ function addItem() {
 		$(list).append('<li>'+newItem+'</li>');
 		$('.add-item').val(''); //clears input 
 	}
+	updateCount();
 }
 
 $(document).ready(function(){
@@ -34,6 +41,7 @@ $(document).ready(function(){
 	}).on('click', 'button', function(event) {
 		event.preventDefault();
 		$(this).parent().remove();
+		updateCount();
 	});
 
 });
