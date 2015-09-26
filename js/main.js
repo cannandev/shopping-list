@@ -28,9 +28,7 @@ $(document).ready(function(){
 		else {
 			$(this).addClass('checked');
 		}
-	});
-
-	$('.items').on('mouseenter', 'li', function(event) {
+	}).on('mouseenter', 'li', function(event) {
 		event.preventDefault();
 		$(this).addClass('selected').append('<button>Remove</button');
 	}).on('mouseleave', 'li', function(event) {
@@ -38,5 +36,6 @@ $(document).ready(function(){
 		$(this).removeClass('selected');
 		$(this).find('button').remove();
 	});
+
 
 });
