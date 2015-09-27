@@ -20,12 +20,7 @@ html {
   box-sizing: inherit;
 }
 body {
-  background: #000000 url(../images/bg-chalk.jpg) center top no-repeat;
-}
-@media all and (min-width: 1200px) {
-  body {
-    background-size: cover;
-  }
+  background: #000000 url(../images/kitchen-bg.jpg) 53% top no-repeat;
 }
 input {
   font-family: inherit;
@@ -69,15 +64,22 @@ button {
 /* main content */
 .main {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
+  background: url(../images/chalk-board.jpg) 52% top repeat-y;
+  z-index: 2;
+  min-height: 612px;
 }
 .main p.count {
   text-align: center;
 }
 .item-wrapper {
   margin: 0 auto;
-  width: 16.875em;
-  padding: 1em 0;
+  padding: 1em .5em 1em 2em;
+}
+@media all and (min-width: 400px) {
+  .item-wrapper {
+    width: 384px;
+  }
 }
 .item-wrapper ul {
   color: #ffffff;
@@ -110,6 +112,7 @@ button {
   width: 100%;
   bottom: 0;
   padding-left: 1em;
+  z-index: 3;
 }
 .footer-instructions h1 {
   margin: .5em 0 .2em 0;
