@@ -5,14 +5,19 @@
   src: url('../fonts/EraserRegular-webfont.eot?iefix') format('eot'), url('../fonts/EraserRegular-webfont.woff') format('woff'), url('../fonts/EraserRegular-webfont.ttf') format('truetype'), url('../fonts/EraserRegular-webfont.svg#webfont') format('svg');
 }
 @font-face {
-  font-family: 'PTSansNarrow';
-  src: url('../fonts/PTN57F-webfont.eot');
-  src: url('../fonts/PTN57F-webfont.eot?iefix') format('eot'), url('../fonts/PTN57F-webfont.woff') format('woff'), url('../fonts/PTN57F-webfont.ttf') format('truetype'), url('../fonts/PTN57F-webfont.svg#webfont') format('svg');
+  font-family: 'Aaargh';
+  src: url('../fonts/Aaargh-webfont.eot');
+  src: url('../fonts/Aaargh-webfont.eot?iefix') format('eot'), url('../fonts/Aaargh-webfont.woff') format('woff'), url('../fonts/Aaargh-webfont.ttf') format('truetype'), url('../fonts/Aaargh-webfont.svg#webfont') format('svg');
 }
 /* basic overrides */
 html {
   box-sizing: border-box;
   font-size: 16px;
+}
+@media all and (min-width: 1200px) {
+  html {
+    font-size: 1.2em;
+  }
 }
 *,
 *:before,
@@ -20,23 +25,23 @@ html {
   box-sizing: inherit;
 }
 body {
-  background: #000000 url(../images/kitchen-bg.jpg) 53% top no-repeat;
+  background: #000000 url(../images/kitchen-bg.jpg) center top no-repeat;
 }
 input {
   font-family: inherit;
-  font-size: .8em;
-  width: 200px;
+  font-size: .9em;
+  width: 300px;
   padding: 4px .5em;
   border: 1px solid #000000;
   outline: 0;
 }
 button {
   font-size: .8em;
-  border: 0;
-  background-color: #000000;
-  color: #ffffff;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
   padding: 5px 6px;
-  vertical-align: middle;
+  vertical-align: top;
 }
 .container {
   margin: 0 auto;
@@ -45,18 +50,22 @@ button {
 .header-form {
   background-color: transparent;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 2.6em 0;
+  padding: 1em 0;
   text-align: center;
   z-index: 1;
 }
 .header-form h1 {
-  margin: .5em 0 .2em 0;
+  font-family: 'Aaargh', Helvetica, sans-serif;
   font-size: 1.4em;
-  text-transform: uppercase;
+  margin: .5em 0 .2em 0;
 }
 .header-form h2 {
-  font-size: 1em;
+  font-family: 'Aaargh', Helvetica, sans-serif;
+  font-size: .8em;
   margin: 0;
+}
+.header-form h2 a {
+  text-decoration: none;
 }
 .header-form .form-group {
   margin: .5em 0;
@@ -65,20 +74,21 @@ button {
 .main {
   position: relative;
   overflow: auto;
-  background: url(../images/chalk-board.jpg) 52% top repeat-y;
+  background: url(../images/chalk-board.jpg) 50% top no-repeat;
   z-index: 2;
-  min-height: 612px;
+  min-height: 660px;
 }
 .main p.count {
   text-align: center;
+  color: #ffffff;
 }
 .item-wrapper {
   margin: 0 auto;
-  padding: 1em .5em 1em 2em;
+  padding: 0 1em;
 }
 @media all and (min-width: 400px) {
   .item-wrapper {
-    width: 384px;
+    width: 400px;
   }
 }
 .item-wrapper ul {
