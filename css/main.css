@@ -129,11 +129,12 @@ button {
   font-size: 1em;
 }
 .footer-instructions .angle {
+  cursor: pointer;
+  font-size: 2em;
+  padding-right: .5em;
   position: absolute;
   right: 0;
   top: -4px;
-  font-size: 2em;
-  padding-right: .5em;
 }
 .footer-instructions .angle i:first-child {
   display: none;

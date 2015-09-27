@@ -45,4 +45,11 @@ $(document).ready(function(){
 		updateCount();
 	});
 
+	$('.angle').click(function(){
+		$(this).next('p').toggle('slow', function(){
+			$('.fa-angle-double-up').toggle();
+			$('.fa-angle-double-down').toggle();
+		});
+	});
+
 });
